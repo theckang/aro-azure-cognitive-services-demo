@@ -29,7 +29,9 @@ We are going to build a Flask app based on this [Microsoft Tutorial](https://git
 Deploy the app
 
 ```bash
-oc new-app python:3.6-ubi8~https://github.com/theckang/Text-Translation-API-V3-Flask-App-Tutorial --name cognitive-service-demo --env COGNITIVE_SERVICE_SUBSCRIPTION_KEY=$COGNITIVE_SERVICE_SUBSCRIPTION_KEY
+oc new-app python:3.6-ubi8~https://github.com/theckang/Text-Translation-API-V3-Flask-App-Tutorial \
+  --name cognitive-service-demo \
+  --env COGNITIVE_SERVICE_SUBSCRIPTION_KEY=$COGNITIVE_SERVICE_SUBSCRIPTION_KEY
 ```
 
 Expose the app
