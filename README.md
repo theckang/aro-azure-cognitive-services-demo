@@ -1,10 +1,6 @@
 # Overview
 
-Azure Red Hat OpenShift (ARO) demo using Azure Cognitive Services APIs.
-
-## Overview
-
-
+This repository demonstrates how to deploy applications in Azure Red Hat OpenShift (ARO) that connect to Azure Cognitive Service APIs.  The first demo deploys a web application that integrates with Translate, Text Analytics, and Text-to-Speech APIs hosted by Azure.  The second demo deploys a web application that integrates with a Language Detection Cognitive Service Container hosted locally inside the ARO cluster.
 
 ## Prerequisites
 
@@ -18,7 +14,7 @@ Follow these [instructions](https://docs.microsoft.com/en-us/azure/cognitive-ser
 
 **Important**: For the purposes of this demo, select the `West US` region for your Cognitive Service.
 
-For the Language Detection Container demo, you must also submit a request to approve your Azure subscription for access to Cognitive Service containers.  See [here](https://docs.microsoft.com/en-us/azure/cognitive-services/containers/container-faq#how-do-i-access-and-use-a-gated-preview-container).
+**Note**: For the Language Detection Container demo, you must also submit a request to approve your Azure subscription for access to Cognitive Service containers.  See [here](https://docs.microsoft.com/en-us/azure/cognitive-services/containers/container-faq#how-do-i-access-and-use-a-gated-preview-container).
 
 Set your key in the terminal
 
@@ -26,7 +22,7 @@ Set your key in the terminal
 export COGNITIVE_SERVICE_SUBSCRIPTION_KEY=<enter-your-key>
 ```
 
-## Translate, Synthesize, and Text-to-Speech
+## Translate, Text Analytics, and Text-to-Speech
 
 We are going to build and deploy a Flask app based on this [Microsoft Tutorial](https://github.com/MicrosoftTranslator/Text-Translation-API-V3-Flask-App-Tutorial).
 
