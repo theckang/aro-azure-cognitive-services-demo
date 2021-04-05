@@ -18,6 +18,8 @@ Follow these [instructions](https://docs.microsoft.com/en-us/azure/cognitive-ser
 
 **Important**: For the purposes of this demo, select the `West US` region for your Cognitive Service.
 
+For the Language Detection Container demo, you must also submit a request to approve your Azure subscription for access to Cognitive Service containers.  See [here](https://docs.microsoft.com/en-us/azure/cognitive-services/containers/container-faq#how-do-i-access-and-use-a-gated-preview-container).
+
 Set your key in the terminal
 
 ```bash
@@ -49,8 +51,6 @@ echo $(oc get route cognitive-service-demo --template='http://{{.spec.host}}')
 ```
 
 ## Text Analytics using Language Detection Container
-
-**Important**: To run Cognitive Service containers, you must submit a request to approve your Azure subscription for access.  See [here](https://docs.microsoft.com/en-us/azure/cognitive-services/containers/container-faq#how-do-i-access-and-use-a-gated-preview-container).
 
 We are going to build and deploy a Language Detection application based on this [Microsoft Quickstart](https://docs.microsoft.com/en-us/azure/cognitive-services/containers/azure-kubernetes-recipe).  One container is the application frontend website.  The other container is a Cognitive Service container that will detect the language of the text passed to the website.  See the [quickstart documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/containers/azure-kubernetes-recipe#the-sample-containers) for more information.
 
